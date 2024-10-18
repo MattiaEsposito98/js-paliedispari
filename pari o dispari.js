@@ -11,22 +11,23 @@ function randomNumberFrom1to5(num1_5) {
 let choose = prompt("Scegli pari o dispari")
 choose = choose.toLocaleLowerCase()
 
+
 // Controllo Pari o dispari
 if (choose === "pari" || choose === "dispari") {
   console.log("Hai scelto: " + choose)
-
 } else {
   alert("Errore")
 }
+
 
 // Numero generato dall'utente
 let numUser = parseInt(prompt("Inserisci un numero da 1 a 5"))
 if (numUser <= 5) {
   console.log(`Numero dell'utente: ${numUser}`)
- 
 } else {
   alert("Errore")
 }
+
 
 // Numero generato dal pc
 let numPc = randomNumberFrom1to5()
@@ -35,14 +36,16 @@ console.log(`Numero del pc: ${numPc}`)
 //Somma dei numeri
 let sum = numUser + numPc
 
+
 // Funzione se è pari
 function isEven(numero) {
   if (sum % 2 === 0) {
-      return true
+    return true
   } else {
-      return false
+    return false
   }
 }
+
 
 let result = isEven(sum)
 
@@ -50,13 +53,18 @@ let result = isEven(sum)
 if (result === true) {
   result = "pari"
   console.log(`La somma è ${sum} ed è ${result}`)
- 
 } else {
   result = "dispari"
   console.log(`La somma è ${sum} ed è ${result}`)
 }
 
 
+// Controllo vincitore
+if (choose == result) {
+  console.log(" Hai vinto!")
+} else {
+  console.log("Hai perso!")
+}
 
 
 
