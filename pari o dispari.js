@@ -9,7 +9,7 @@ function randomNumberFrom1to5(num1_5) {
 
 // Sccegli pari o dispari
 let choose = prompt("Scegli pari o dispari")
-choose = choose.toLocaleLowerCase()
+choose = choose.toLowerCase()
 
 
 // Controllo Pari o dispari
