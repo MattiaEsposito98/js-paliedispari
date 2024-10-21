@@ -15,12 +15,7 @@ choose = choose.toLowerCase()
 // Controllo Pari o dispari
 if (choose === "pari" || choose === "dispari") {
   console.log("Hai scelto: " + choose)
-} else {
-  alert("Errore")
-}
-
-
-// Numero generato dall'utente
+  // Numero generato dall'utente
 let numUser = parseInt(prompt("Inserisci un numero da 1 a 5"))
 if (numUser <= 5) {
   console.log(`Numero dell'utente: ${numUser}`)
@@ -65,6 +60,15 @@ if (choose == result) {
 } else {
   console.log("Hai perso!")
 }
+} 
+
+///////////////
+else {
+  alert("Errore")
+}
+
+
+
 
 
 
