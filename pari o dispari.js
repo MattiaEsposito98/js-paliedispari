@@ -19,12 +19,7 @@ if (choose === "pari" || choose === "dispari") {
 let numUser = parseInt(prompt("Inserisci un numero da 1 a 5"))
 if (numUser <= 5) {
   console.log(`Numero dell'utente: ${numUser}`)
-} else {
-  alert("Errore")
-}
-
-
-// Numero generato dal pc
+  // Numero generato dal pc
 let numPc = randomNumberFrom1to5()
 console.log(`Numero del pc: ${numPc}`)
 
@@ -60,9 +55,17 @@ if (choose == result) {
 } else {
   console.log("Hai perso!")
 }
+}
+
+
+/////// 2 errore 
+else {
+  alert("Errore")
+}
+
 } 
 
-///////////////
+/////////////// 1 errore
 else {
   alert("Errore")
 }
